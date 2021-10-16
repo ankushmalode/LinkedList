@@ -1,7 +1,7 @@
 package com.bridgelabz.Stacks;
 
 class Stack {
-    int[] stack=new int[4];
+    int[] stack=new int[5];
     int top=0;
     public void push(int data){
         stack[top]=data;
@@ -16,6 +16,11 @@ class Stack {
         top--;
         data=stack[top];
         stack[top]=0;
+        return data;
+    }
+    public int peak(){
+        int data;
+        data=stack[top-1];
         return data;
     }
 }
