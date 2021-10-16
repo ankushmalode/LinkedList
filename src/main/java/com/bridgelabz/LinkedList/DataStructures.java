@@ -7,9 +7,8 @@ public class DataStructures {
         list.insert(56);
         list.insert(30);
         list.insert(70);
-
         list.insertAtStart(34);
-
+        list.insertAt(2,47);
         list.show();
     }
 }
