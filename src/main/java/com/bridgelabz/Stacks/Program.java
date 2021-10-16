@@ -6,7 +6,9 @@ public class Program {
         stack.push(70);
         stack.push(30);
         stack.push(56);
-
+        stack.push(79);
+        stack.show();
+        System.out.println("\nTop value pop: "+stack.pop());
         stack.show();
     }
 }
