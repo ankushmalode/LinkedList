@@ -31,7 +31,6 @@ public class LinkedList {
     public void insertAtStart(int data) {
         Node node = new Node();
         node.data = data;
-        node.next = null;
         node.next = head;
         head = node;
     }
@@ -51,4 +50,16 @@ public class LinkedList {
         }
     }
 
+    public void deleteAt(int index){
+        if (index==0)
+            head=head.next;
+        else {
+            Node n=head;
+            Node n1;
+            for (int i=0;i<index-1;i++)
+                n=n.next;
+            n1=n.next;
+            n.next=n1.next;
+        }
+    }
 }

@@ -9,6 +9,7 @@ public class DataStructures {
         list.insert(70);
         list.insertAtStart(34);
         list.insertAt(2,47);
+        list.deleteAt(2);
         list.show();
     }
 }
